@@ -5,8 +5,8 @@ from request_weather import get_weather
 root = tk.Tk()
 
 # Устанавливаем иконку
-icon = tk.PhotoImage(file="image/main.png")
-root.iconphoto(True, icon)
+# icon = tk.PhotoImage(file="image/main.png")
+# root.iconphoto(True, icon)
 
 # Устанавливаем размер окна
 root.geometry("500x400")
