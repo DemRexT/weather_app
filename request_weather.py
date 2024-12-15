@@ -1,13 +1,17 @@
+import os
 import requests
+from dotenv import load_dotenv
 
-api = 'a5832fa79f6a1c15cfc2e9ca08631df3'
+load_dotenv()
+
+API = os.getenv("API")
 
 def get_weather(city):
 
     # Удаление случайных пробелов
     city = city.replace(" ", "")
 
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}&units=metric&lang=ru"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API}&units=metric&lang=ru"
 
     response = requests.get(url)
 
@@ -26,7 +30,6 @@ def get_weather(city):
             f"Скорость ветра: {wind['speed']}\n"
         )
 
-        print(result)
         return result
 
     else:
@@ -34,4 +37,4 @@ def get_weather(city):
 
 
 if __name__ == "__main__":
-    get_weather()
+    get_weather('питер')
