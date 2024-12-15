@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 *.env
 *.idea
 __pycache__/
@@ -8,4 +8,4 @@ build/
 =======
 *.
 *.idea
->>>>>>> 342984f8cde88c1abef6bdef800a8dfdffff522e
+
