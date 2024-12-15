@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 *.env
 *.idea
 __pycache__/
 *.pyc
 dist/
 build/
+=======
+*.
+*.idea
+>>>>>>> 342984f8cde88c1abef6bdef800a8dfdffff522e
